@@ -1,0 +1,133 @@
+<html>
+<head>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .header {
+            background-color: #d3d3d3;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-family: 'Brush Script MT', cursive;
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            background-color: #c2183e;
+            color: white;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+        .product-details {
+            margin-left: 20px;
+            text-align: left;
+        }
+        .product-details h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .product-description {
+            background-color: #d3d3d3;
+            padding: 10px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .product-details label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .product-details input {
+            padding: 5px;
+            border: 1px solid #d3d3d3;
+            width: 200px;
+        }
+        .check-availability {
+            background-color: #c2183e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .more-images {
+            margin: 20px auto;
+            width: fit-content;
+        }
+        .more-images h3 {
+            font-style: italic;
+        }
+        .more-images .image {
+            background-color: #c2183e;
+            color: white;
+            width: 150px;
+            height: 150px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Clinikally</h1>
+        <nav>
+            <a href="#">home</a>
+            <a href="#">contact us</a>
+            <a href="#">about us</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="product-image">
+            img
+        </div>
+        <div class="product-details">
+            <h2>name of the product</h2>
+            <div class="product-description">
+                related description
+            </div>
+            <label for="qty">qty :</label>
+            <input type="text" id="qty" name="qty">
+            <label for="pincode">pincode :</label>
+            <input type="text" id="pincode" name="pincode">
+            <button class="check-availability">check availabity</button>
+        </div>
+    </div>
+    <div class="more-images">
+        <h3>more images</h3>
+        <div class="image">more images</div>
+        <div class="image">more images</div>
+        <div class="image">more images</div>
+        <div class="image">more images</div>
+    </div>
+</body>
+</html>

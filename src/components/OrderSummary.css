@@ -1,0 +1,104 @@
+ord/* General styles for the Order Summary page */
+.order-summary {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.order-summary h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+/* Product list styles */
+.product-list {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-item:last-child {
+    border-bottom: none;
+}
+
+.product-name {
+    font-weight: 600;
+    color: #555;
+}
+
+.product-price {
+    color: #007BFF; /* Bootstrap primary color */
+}
+
+/* Delivery details styles */
+.delivery-details {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e7f3fe;
+    border-left: 5px solid #2196F3;
+    border-radius: 4px;
+}
+
+.delivery-details strong {
+    color: #333;
+}
+
+/* Button styles */
+.confirm-order-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745; /* Green color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.confirm-order-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.reset-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #dc3545; /* Red color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.reset-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .order-summary {
+        padding: 15px;
+    }
+
+    .confirm-order-button, .reset-button {
+        padding: 8px 15px;
+    }
+}
